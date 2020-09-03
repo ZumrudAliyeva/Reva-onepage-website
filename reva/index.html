@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reva</title>
+   
+    <script src="https://kit.fontawesome.com/54e137977b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="hamburger">
+        <i class="fas fa-bars o-hambrgr"></i>
+        <i class="fas fa-times c-hambrgr"></i>
+    </div>
+ 
+    <!--The Navigation Bar-->
+    <div class="navbar fixed-top navbar-expand-lg navbar-light">
+        <span class="closed-menu">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <div class="right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="container">
+            <div class="bg-logo"></div>
+            <ul class="navbar-collapse ml-auto">
+                <li id="home" class="nav-item">
+                    <a href="#home-cont" class="home">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-span">Home</span>
+                    </a>
+                </li>
+                <li id="about" class="nav-item">
+                    <a href="#about-cont" class="about">
+                        <i class="far fa-user"></i>
+                        <span class="nav-span">About</span>
+                    </a>
+                </li>
+                <li id="services" class="nav-item">
+                    <a href="#serv-cont" class="serv">
+                        <i class="fas fa-layer-group"></i>
+                        <span class="nav-span">Services</span>
+                    </a>
+                </li>
+                <li id="portfolio" class="nav-item">
+                    <a href="#work-cont" class="work">
+                        <i class="far fa-image"></i>
+                        <span class="nav-span">Portfolio</span>
+                    </a>
+                </li>
+                <li id="testimonials" class="nav-item">
+                    <a href="#testim-cont" class="testim">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="nav-span">Testimonials</span>
+                    </a>
+                </li>
+                <li id="contact" class="nav-item">
+                    <a href="#contact-cont" class="contact">
+                        <i class="far fa-envelope"></i>
+                        <span class="nav-span">Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tumblr.com" target="blank"><i class="fab fa-tumblr"></i></a>
+                <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--End of The Navigation Bar-->
+    <!-- Portfolio Modal -->
+    <div class="modal-portfolio">
+        <div class="modal-portfolio-content">
+            <img class="mpf" src="" alt="">
+           
+
+            <i class="fas fa-times modal-portfolio-close"></i>
+
+        </div>
+    </div>
+    <!-- End of Portfolio Modal -->
+
+    <!-- Iframe Modal -->
+    <div class="iframe-modal-container">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F6h9dCRL4NM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- End of Iframe Modal -->
+
+
+    <!-- start header -->
+    <div id="home-cont" class="section home">
+        <div class="slider slick-initialized slick-slider">
+            <div class="slider-arrow-left arrows"><i class="fas fa-chevron-left"></i></div>
+            <div class="slider-arrow-right arrows"><i class="fas fa-chevron-right"></i></div>
+            <div class="slick-list draggable">
+                <div class="slick-track">
+                    <div class="slider1 slick-slide active">
+                        <div class="overlay"></div>
+                        <div class="slider-title">
+                            <h1 class=" text-uppercase"><strong>REVA</strong> SMITH</h1>
+                            <a class="type" data-period="2000" data-type='[ "Web Designer", "Graphic Designer", "Frontend Developer"]'></a>
+                            <span class="wrap"></span>
+                            <div class="button">
+                                <a href="#work-cont">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2 slick-slide">
+                        <div class="overlay"></div>
+                        <div class="slider-title">
+                            <h1 class="title"><strong>REVA</strong> SMITH</h1>
+                            <p class="type"></p>
+                            <span class="typed-cursor">|</span>
+                            <div class="button">
+                                <a href="#work-cont">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider3 slick-slide">
+                        <div class="overlay"></div>
+                        <div class="slider-title">
+                            <h1 class="title"><strong>REVA</strong> SMITH</h1>
+                            <p class="type"></p>
+                            <span class="typed-cursor">|</span>
+                            <div class="button">
+                                <a href="#work-cont">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end header -->
+    <!-- start about -->
+    <section id="about-cont" class="about section"data-aos="fade-up" data-aos-easing="ease-in-back"
+    data-aos-delay="1000">
+        <div class="title">
+            <h1 class="kaushan">
+                About
+            </h1>
+        </div>
+        <div class="container"data-aos="fade-up" data-aos-easing="ease-in-back"
+        data-aos-delay="1000">
+            <div class="row">
+                <div class="col-md-10 col-lg-6">
+                    <div class="about-img bg-image"data-aos="fade-right" data-aos-easing="ease-in-back"
+                    data-aos-delay="3000"></div>
+                </div>
+                <div class="col-md-12 col-lg-6"data-aos="fade-up" data-aos-easing="ease-in-back"
+                data-aos-delay="1000">
+                    <div class="tabs-about">
+                        <ul class="nav nav-tabs text-center">
+                            <li class="nav-items">
+                                <a class="nav-link active-nav-item" id="about-tab" href="#">
+                                    <i class="far fa-user admin"></i>
+
+
+                                    <span>Profile</span>
+                                </a>
+
+
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link   " id="profile-tab" href="#">
+                                    <i class="far fa-star"></i>
+
+
+                                    <span>About me</span>
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link " id="skill-tab" href="#">
+                                    <i class="fas fa-magic"></i>
+
+
+                                    <span>Skills</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-about-content">
+                            <!-- start about me tab -->
+                            <div class="tab-pane  text-left ">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita in dolorum iste
+                                    incidunt, dignissimos optio nam sunt. Asperiores, necessitatibus quaerat labore
+                                    assumenda facilis quam dolorem, ea hic porro voluptatem fugiat.
+                                </p>
+                                <p>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>Hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+                                    consequatur aut perferendis doloribus asperiores repellat.
+
+                                </p>
+                                <img src="images/signature.png" class="signature" alt="">
+                                <!-- here img signature -->
+                            </div>
+                            <!-- end of about me tab -->
+                            <!-- ================== -->
+                            <!-- start profile tab -->
+                            <div class="tab-pane  text-left profile ">
+                                <h6>
+                                    <span class="title-info">Name :</span>
+                                    <span>Reva Smith</span>
+                                </h6>
+                                <!-- edit your name -->
+                                <h6>
+                                    <span class="title-info"> Nationality :</span>
+                                    <span>Moroccan</span>
+                                </h6>
+                                <!-- edit your nationality -->
+                                <h6>
+                                    <span class="title-info"> Email :</span>
+                                    <span>reva@email.com</span>
+                                </h6>
+                                <!-- edit your email -->
+                                <h6>
+                                    <span class="title-info">Date of birth : </span>
+                                    <span>09-30-1991</span>
+                                </h6>
+                                <!-- edit your date of birth -->
+                                <h6>
+                                    <span class="title-info"> Phone : </span>
+                                    <span>+123 456 7890</span>
+                                </h6>
+                                <!-- edit your phone -->
+                                <div class="btn-about download">
+                                    <a href="#">Download Resume</a>
+                                </div>
+
+                            </div>
+                            <!-- end of profile  tab -->
+                            <!-- ================== -->
+                            <!-- start skills tab -->
+                            <div class="tab-pane  skill ">
+                                <div class="skills">
+                                    <p class="progress-text">Html</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-present="85%" style="opacity: 1; width: 85%;">
+                                        </div>
+                                    </div>
+                                    <p class="progress-text">Photohsop</p>
+                                    <div class="progress">
+                                        <div class="progress-bar " data-present="70%" style="opacity: 1; width: 70%;">
+                                        </div>
+                                    </div>
+                                    <p class="progress-text">Javascript</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-present="60%" style="opacity: 1; width: 60%;">
+                                        </div>
+                                    </div>
+                                    <p class="progress-text">Php</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-present="80%" style="opacity: 1; width: 80%;">
+                                        </div>
+                                    </div>
+                                    <p class="progress-text">Photohsop</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-present="50%" style="opacity: 1; width: 50%;">
+                                        </div>
+                                        <!-- here you can edit percentage -->
+                                    </div>
+                                </div>
+                                <div class="btn-about hire">
+                                    <a href="#contact-cont">Hire Me</a>
+                                </div>
+                            </div>
+                            <!-- end skills tab -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+    <!-- start services -->
+    <section id="serv-cont" class="serv section">
+        <div class="title">
+            <h1 class="kaushan">Services</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="servs">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <img src="images/processing.png" alt="serv1">
+                                    <h4>Web Development</h4>
+                                    <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do tempor .</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <img src="images/browser.png" alt="serv1">
+                                    <h4>Management</h4>
+                                    <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do tempor .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <img src="images/instagram.png" alt="">
+                                    <h4>Photography</h4>
+                                    <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do tempor .</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <img src="images/support.png" alt="">
+                                    <h4>Support</h4>
+                                    <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do tempor .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 video">
+                    <div class="serv-vid bg-image">
+                        <a class="play" href="#">
+                            <!-- you can edit link here -->
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end services -->
+    <!-- start work -->
+    <section id="work-cont" class="work section">
+        <div class="title">
+            <h1 class="kaushan">Portfolio</h1>
+        </div>
+        <div class="container">
+            <div class="shuffle">
+                <ul class="list-unstyled">
+                    <li class=" item all active-li">All</li>
+                    <li class="item web1">Web Design</li>
+                    <li class="item graphic1">Graphic Design</li>
+                    <li class="item marketing1">Marketing</li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <div class="row">
+                    <!-- start image number1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items marketing">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Marketing</span>
+                                </div>
+                                <div class="image">
+                                    
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/01.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number1 -->
+                    <!-- start image number2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items graphic">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Graphic Design</span>
+                                </div>
+                                <div class="image">
+                                   
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number2 -->
+                    <!-- start image number3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items web">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Web Design</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/03.jpeg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number3 -->
+                    <!-- start image number4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items marketing">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Marketing</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/04.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number4 -->
+                    <!-- start image number5 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items web">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Web Design</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/05.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number5 -->
+                    <!-- start image number6 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items graphic">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Graphic Design</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/06.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number6 -->
+                    <!-- start image number7 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items marketing less">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Marketing</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/07.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number7 -->
+                    <!-- start image number8 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items graphic less">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Graphic Design</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/08.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number8 -->
+                    <!-- start image number9 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="items web less">
+                            <div class="over">
+                                <div class="info-img">
+                                    <h4>Title Projet</h4>
+                                    <span>Web Design</span>
+                                </div>
+                                <div class="image">
+                                    <i class="fa fa-arrows-alt scale"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/09.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- end image number9 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end work -->
+    <!-- start testimonials -->
+   <!--Start testimonials-->
+   <div id="testim-cont" class="section testimonials">
+    <div class="title">
+        <h1 class="kaushan">Testimonials</h1>
+    </div>
+    <div class="container">
+        <div class="tabbable tabs-left">
+            <div class="list-tabs">
+                <ul class="nav nav-tabs testim">
+                    <li class="testimli acive-li">
+                        <a href="#a" class="acvite">
+                            <div class="image-tab image-testim1 bg-image"></div>
+                        </a>
+                    </li>
+                    <li class="testimli">
+                        <a href="#b" class="">
+                            <div class="image-tab image-testim2 bg-image"></div>
+                        </a>
+                    </li>
+                    <li class="testimli">
+                        <a href="#c" class="">
+                            <div class="image-tab image-testim3 bg-image"></div>
+                        </a>
+                    </li>
+                    <li class="testimli">
+                        <a href="#d" class="">
+                            <div class="image-tab image-testim4 bg-image"></div>
+                        </a>
+                    </li>
+                    <li class="testimli">
+                        <a href="#e" class="">
+                            <div class="image-tab image-testim5 bg-image"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabContent">
+                <div class="tabPane activeTab" id="a">
+                    <div class="profil-image">
+                        <div class="imageTab image-testim1 bg-image"></div>
+                    </div>
+                    <div class="profil-details">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <h4>John Doe</h4>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="tabPane" id="b">
+                    <div class="profil-image">
+                        <div class="imageTab image-testim2 bg-image"></div>
+                    </div>
+                    <div class="profil-details">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <h4>Joshua Earle</h4>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="tabPane" id="c">
+                    <div class="profil-image">
+                        <div class="imageTab image-testim3 bg-image"></div>
+                    </div>
+                    <div class="profil-details">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <h4>Matthew Dix</h4>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="tabPane" id="d">
+                    <div class="profil-image">
+                        <div class="imageTab image-testim4 bg-image"></div>
+                    </div>
+                    <div class="profil-details">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <h4>Mike Petrucci</h4>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="tabPane" id="e">
+                    <div class="profil-image">
+                        <div class="imageTab image-testim5 bg-image"></div>
+                    </div>
+                    <div class="profil-details">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                        <h4>Lauren Dix</h4>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client bg-image">
+        <div class="overlay-cl"></div>
+        <div class="logos">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="images/brand_1.png" alt="brand 1">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="images/brand_2.png" alt="brand 2">
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <img src="images/brand_3.png" alt="brand 3">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="images/brand_4.png" alt="brand 4">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="images/brand_1.png" alt="brand 5">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of testimonials-->
+
+
+    <!-- start contact -->
+    <section id="contact-cont" class="contact section">
+        <div class="title">
+            <h1 class="kaushan">Contact</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form">
+                    <form id="my_form" method="post">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Your Email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" class="form-control" placeholder="Your Phone"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="form-group">
+                                <textarea id="msg" class="form-control" placeholder="Write Your Message Here..."
+                                    required></textarea>
+                            </div>
+                            <p>
+                                <span class="send-btn">
+                                    <input id="btn" type="submit" class="btn" value="Send Message">
+                                    <i class="fas fa-long-arrow-alt-right arrow"></i>
+                                </span>
+                                <span id="status"></span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="infos background-gradient">
+                    <h2 class="text-uppercase kaushan">Reva</h2>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="reva@email.com">reva@email.com</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel: +123 456 7899">+123 456 7899</a>
+                    </div>
+                    <div class="adress">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Street Name, City , 32008</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maps" id="overlay">
+            <div class="open-map">
+                <span class="o-map map-active">
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                    Open Map
+                </span>
+                <span class="c-map">
+                    <i class="fas fa-arrow-alt-circle-up"></i>
+                    Close Map
+                </span>
+            </div>
+            <div class="google-wrapper">
+                <div id="google-map">
+                    <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162778.81964475298!2d-73.93891815355539!3d40.703660465248056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2s!4v1491335061565"
+                        class="scrolloff"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- start footer -->
+        <footer>
+            <p>© Copyright 2018. </p>
+            <p>
+                All Right Reserved By
+                <a href="https://themeforest.net/user/bouthythemes/portfolio" target="_blank">BouthyThemes</a>
+            </p>
+        </footer>
+        <!-- end footer -->
+    </section>
+    <!-- end contact -->
+    <!-- start loading -->
+    <!-- end loading -->
+
+
+
+
+   
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+
+</html>
